@@ -6,15 +6,17 @@
 /* фон кнопки неактивной #F5F4FA */
 /* черный цвет для лого #000000 */
 
+:root {
+  --accent-color: #2196f3;
+  --main-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --contrast-txt-color: #ffffff;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
-  font-family: Roboto;
-}
-
-:root {
-  --accent-color: #2196f3;
-  --secondary-txt-color: #757575;
+  font-family: Roboto, sans-serif;
 }
 
 .list {
@@ -25,23 +27,25 @@ body {
 
 .logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
-.logo-web {
-  color: var(--accent-color);
+.logo-part {
+  color: var(--main-txt-color);
 }
 
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-color);
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -50,9 +54,10 @@ body {
 .contacts .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
+  text-decoration: none;
 }
 
 .contacts .link:hover,
@@ -63,29 +68,26 @@ body {
 /* Главный баннер */
 .hero {
   background-color: #2f303a;
-  color: #ffffff;
+  color: var(--contrast-txt-color);
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  font-weight: bold;
+  background-color: #2196f3;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+  line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--contrast-txt-color);
 }
 
 .hero-button:hover,
@@ -95,51 +97,52 @@ body {
 
 /* Особенности */
 .features-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
 }
 
 /* Чем мы занимаемся */
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 /* Наша команда */
+
 .team {
   background-color: #f5f4fa;
-}
-.member-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.member-position {
+.member-item {
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.member-name {
+  font-weight: 500;
+}
+
+.member-position {
   color: var(--secondary-txt-color);
 }
 
 /* Подвал сайта */
 .logo-studio {
-  color: #ffffff;
+  color: var(--contrast-txt-color);
 }
 
 .footer {
@@ -151,7 +154,8 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--contrast-txt-color);
+  text-decoration: none;
 }
 
 .address-contacts {
@@ -160,4 +164,5 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
