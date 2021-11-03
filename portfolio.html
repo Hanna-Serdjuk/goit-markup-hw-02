@@ -22,9 +22,9 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
+    <header class="header">
       <nav>
-        <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+        <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
         <ul class="site-nav list">
           <li><a href="./index.html" class="link">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -39,16 +39,17 @@
 
     <!-- Основной контент -->
     <main>
+      <!-- Портфолио проектов -->
       <section>
         <h1>Портфолио проектов</h1>
-        <ul class="list">
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="filter-list list">
+          <li><button class="filter-item" type="button">Все</button></li>
+          <li><button class="filter-item" type="button">Веб-сайты</button></li>
+          <li><button class="filter-item" type="button">Приложения</button></li>
+          <li><button class="filter-item" type="button">Дизайн</button></li>
+          <li><button class="filter-item" type="button">Маркетинг</button></li>
         </ul>
-        <ul class="list">
+        <ul class="projects-list list">
           <li>
             <img
               src="./images/project1.jpg"
@@ -56,8 +57,8 @@
               width="370"
               height="294"
             />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-title">Технокряк</h2>
+            <p class="project-type">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -66,38 +67,38 @@
               width="370"
               height="294"
             />
-            <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-            <p>Дизайн</p>
+            <h2 class="project-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+            <p class="project-type">Дизайн</p>
           </li>
           <li>
             <img src="./images/project3.jpg" alt="логотип ресторана" width="370" height="294" />
-            <h2>Ресторан <span lang="en">Seafood</span></h2>
-            <p>Приложение</p>
+            <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
+            <p class="project-type">Приложение</p>
           </li>
           <li>
             <img src="./images/project4.jpg" alt="наушники" width="370" height="294" />
-            <h2>Проект <span lang="en">Prime</span></h2>
-            <p>Маркетинг</p>
+            <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
+            <p class="project-type">Маркетинг</p>
           </li>
           <li>
             <img src="./images/project5.jpg" alt="две коробки" width="370" height="294" />
-            <h2>Проект <span lang="en">Boxes</span></h2>
-            <p>Приложение</p>
+            <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
+            <p class="project-type">Приложение</p>
           </li>
           <li>
             <img src="./images/project6.jpg" alt="монитор компьютера" width="370" height="294" />
-            <h2 lang="en">Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
+            <p class="project-type">Веб-сайт</p>
           </li>
           <li>
             <img src="./images/project7.jpg" alt="раскрытый журнал" width="370" height="294" />
-            <h2>Издание <span lang="en">Limited Edition</span></h2>
-            <p>Дизайн</p>
+            <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
+            <p class="project-type">Дизайн</p>
           </li>
           <li>
             <img src="./images/project8.jpg" alt="этикетка с логотипом" width="370" height="294" />
-            <h2>Проект <span lang="en">LAB</span></h2>
-            <p>Маркетинг</p>
+            <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
+            <p class="project-type">Маркетинг</p>
           </li>
           <li>
             <img
@@ -106,8 +107,8 @@
               width="370"
               height="294"
             />
-            <h2 lang="en">Growing Business</h2>
-            <p>Приложение</p>
+            <h2 class="project-title" lang="en">Growing Business</h2>
+            <p class="project-type">Приложение</p>
           </li>
         </ul>
       </section>
@@ -115,9 +116,7 @@
 
     <!--Подвал сайта-->
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-      >
+      <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
       <address class="address">
         <ul class="list">
           <li>

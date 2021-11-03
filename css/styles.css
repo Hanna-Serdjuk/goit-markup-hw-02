@@ -65,10 +65,48 @@ body {
   color: var(--accent-color);
 }
 
+/* Подвал сайта */
+.logo-studio {
+  color: var(--contrast-txt-color);
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--contrast-txt-color);
+  text-decoration: none;
+}
+
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
+}
+
+.address-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Страница Студия */
 /* Главный баннер */
 .hero {
-  background-color: #2f303a;
   color: var(--contrast-txt-color);
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -81,13 +119,13 @@ body {
 }
 
 .hero-button {
-  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--contrast-txt-color);
+  background-color: var(--accent-color);
 }
 
 .hero-button:hover,
@@ -122,9 +160,9 @@ body {
 /* Наша команда */
 
 .team {
-  background-color: #f5f4fa;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: #f5f4fa;
 }
 
 .member-item {
@@ -140,29 +178,34 @@ body {
   color: var(--secondary-txt-color);
 }
 
-/* Подвал сайта */
-.logo-studio {
-  color: var(--contrast-txt-color);
-}
+/* Страница Портфолио */
+/* Портфолио проектов */
 
-.footer {
-  background-color: #2f303a;
-}
-
-.location {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
+.filter-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--contrast-txt-color);
-  text-decoration: none;
+  color: var(--main-txt-color);
+  background-color: #f5f4fa;
 }
 
-.address-contacts {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
+.filter-item:hover,
+.filter-item:focus {
+  color: var(--contrast-txt-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+  color: var(--secondary-txt-color);
 }
