@@ -111,6 +111,7 @@ body {
 }
 
 .hero-button {
+  font-family: inherit;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -176,6 +177,7 @@ body {
 
 .filter-item {
   cursor: pointer;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
